@@ -117,6 +117,7 @@ Developed by: NAVEENKUMAR V
 RegisterNumber:  212221230068
 ~~~
 ### SR FLIPFLOP:
+~~~
 module sr(s,r,clk,q,qbar);
 input s,r,clk;
 output q,qbar;
@@ -126,7 +127,7 @@ nand(y,r,clk);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodul
-
+~~~
 
 
 
@@ -137,6 +138,7 @@ endmodul
 ![image](https://user-images.githubusercontent.com/94165322/202895355-babb36c2-8c07-446a-9f24-dc28a436ae0e.png)
 
 ## D FLIPFLOP:
+~~~
 module d(d,clk,q,qbar);
 input d,clk;
 output q,qbar;
@@ -146,7 +148,7 @@ nand(y,d,clk);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule
-
+~~~
 ### RTL:
 ![image](https://user-images.githubusercontent.com/94165322/202895369-cdd27366-7411-4111-a6c6-43d9a3c50ba3.png)
 
@@ -155,6 +157,7 @@ endmodule
 
 
 ### JK FLIPFLOP:
+~~~
 module jk(j,k,clk,q,qbar);
 input j,k,clk;
 output q,qbar;
@@ -164,7 +167,7 @@ nand(y,k,clk,q);
 nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule 
-
+~~~
 ### RTL:
 ![image](https://user-images.githubusercontent.com/94165322/202895408-3729aa6c-d45b-4549-9ff7-013564d358bd.png)
 
@@ -174,6 +177,7 @@ endmodule
 
 
 ### T FLIPFLOP:
+~~~
 module t(t,clk,q,qbar);
 input t,clk;
 output q,qbar;
@@ -183,7 +187,7 @@ nand(y,t,clk,q);
 nand(q,x,qbar);
 nand(qbar,r,q);
 endmodule
-
+~~~
 ### RTL:
 ![image](https://user-images.githubusercontent.com/94165322/202895435-580d08b4-637c-41c7-850a-590a74e17770.png)
 
